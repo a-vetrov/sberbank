@@ -1,0 +1,62 @@
+.card {
+    border: 2px solid #d3d3d3;
+    border-radius: 6px;
+}
+
+.card-description {
+    text-align: justify;
+    color: #767672;
+    font-size: 18px;
+    margin: 20px 35px 35px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 22px;
+    color: black;
+    white-space: nowrap;
+}
+
+.card-header {
+    border-bottom: 2px solid #d3d3d3;
+    padding: 20px 35px;
+}
+
+.card-dueDate {
+    font-size: 20px;
+    color: #767672;
+}
+
+.card-amount {
+    font-weight: bold;
+    font-size: 22px;
+    color: black;
+}
+
+.card-number {
+    font-size: 20px;
+    color: #767672;
+}
+
+.card-down-arrow {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAABy0lEQVQ4T2NkoBAwUqifYRAYsHv3bv43b95E8vDw7PX19b1NjJeePXsmcvDgwRBzc/P1jMuXL2/bt29fpby8/P7q6mpnRkbG/4QMWbRo0Yp9+/aFu7m57WCcMWPG8R07dliIi4szqKurny8sLLRmZGT8jsuQ6dOnbzt79qznly9fGHR0dBgYX79+LblgwYL9d+7cUf/x4weDhobGzczMTEsBAYH36IZ0dnYevHfvnt3fv38ZhISE3uTk5FiAY+H///+cdXV1h9++fWv8/ft3BgUFhUdJSUlWsrKyT2HybW1tBx8/fmz68+dPBnl5+SfJyckWIHl4NP7//59xwoQJB2/cuGELskFMTOxNQUGBopiY2Jeurq7rd+7c0fj16xeDmprarZycHCs+Pr63IMMx0sG0adO2nz171oOVlZVBUVHxIRMT07dbt25pMjExgTRfLCoqsmJkZPwG8x7WhDR//vw1hw4dCubl5QV5j+HPnz8M4uLiR+rr6x0YGRn/IocNzpS4bNmyhdu2bYtjY2NjMDIy2p2Tk+OGLWbwJuVFixZtfvPmjVBRUZE1rmjFa8D3798V7t27x62trX2VLAMIpUissUCMJqICkViDAD3/tcEvS7Y3AAAAAElFTkSuQmCC);
+    background-repeat: no-repeat;
+    display: block;
+    width: 16px;
+    height: 18px;
+}
+
+.card-up-arrow {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAB90lEQVRIS2NkoBNgpJM9DKMWkR3So0E3DIPu6tWr2kpKSl85OTkfkOI9khNDX1/fURERkXdxcXG+NLNoypQpu86dO+f669cvBi8vr0VRUVHxxFpGlI/+///P3NjYeODly5c2LCwsDIyMjAyfP39msLOzW5uYmBhCjGUELfr//z9XX1/fsVu3bun/+/ePQU1N7fq/f/+47t+/L//7928GY2PjHVlZWZ6ELMNr0adPn4SnTJkCskSNjY2NQUVF5UZZWZnmq1eveCZMmHD/1atXIszMzAwaGhqHCwoK7BkZGf/jshCnRY8fP5aeO3fuiYcPH8qws7MzyMrKnq6qqgIZ9h1kGEh+3rx5xx48eCDHycnJICwsfLapqckWJo9uIVaLHj16pDxlypQT7969A7tYSUnpUHl5uT265g8fPghOnz79+I0bN9Q5ODhAPr6ZkJDgKCoq+pwoi1paWv5fuXKFgYeHBxQH2zMzM71wBcn///85+/v7j968edPw5cuXDB4eHicyMjIsibJo2bJl23ft2uXh5OS0Mi4uLoJQRP///5+xtbV178OHDx2dnJzaIyMjq4iy6N69e+InT54MtLe3XyMlJfWGkEUg+c2bN6t++fLFWUREZLmrq+tHoiwixmBS1RDMR6QaSHLyppYFMHNGfUR2iA6/oAMAEz66HTn4UWUAAAAASUVORK5CYII=);
+    background-repeat: no-repeat;
+    display: block;
+    width: 16px;
+    height: 18px;
+}
+
+.card-title-container {
+    display: flex;
+}
+
+
+
