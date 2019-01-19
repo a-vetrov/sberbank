@@ -1,4 +1,11 @@
-.App {
-  margin: 10px;
+.app {
+    margin: 10px;
+    max-width: 1200px;
+    flex-grow: 1;
 }
 
+.app-controls-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 35px;
+}

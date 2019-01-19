@@ -29,9 +29,11 @@ class App extends Component {
         cardsToShow.sort(this.sortCardsByDate) ;
 
         return (
-            <div className="App">
-                <CardFilter updateFilter={this.updateFilter}/>
-                <SortButton updateSortMethod={this.updateSortMethod}/>
+            <div className="app">
+                <div className="app-controls-container">
+                    <CardFilter updateFilter={this.updateFilter}/>
+                    <SortButton updateSortMethod={this.updateSortMethod}/>
+                </div>
                 <CardList cards={cardsToShow}/>
             </div>
         );

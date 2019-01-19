@@ -21,11 +21,12 @@ class Card extends Component {
         return (
             <div className={isOpen ? "card card-opened" : "card"}>
                 <div className={isOpen ? "card-header card-header-opened" : "card-header"} onClick={this.handleHeaderClick}>
+                    <div className={isOpen ? "card-up-arrow" : "card-down-arrow"}/>
                     <div className="card-title-container">
                         <div className="card-title">{title + ", " + currencySign}</div>
                         <div className="card-dueDate">{"до " + dueDate}</div>
                         <div className="card-amount">{this.addThousandsSeparator(amount) + " " + currencySign}</div>
-                        <div className={isOpen ? "card-up-arrow" : "card-down-arrow"}/>
+
                     </div>
                     <div className="card-number">{"***" + cardNumber}</div>
                 </div>

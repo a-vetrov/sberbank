@@ -1,0 +1,5 @@
+.card-sort-button {
+    cursor: pointer;
+    user-select: none;
+    padding: 0 20px 20px 20px;
+}

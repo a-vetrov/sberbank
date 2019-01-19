@@ -2,27 +2,28 @@
     border: 2px solid #d3d3d3;
     border-radius: 6px;
     margin-bottom: 10px;
-    max-width: 1200px;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
 }
 
 .card-opened {
     border-radius: 6px 6px 0 0;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.5);
+}
+
+.card-title-container {
+    display: flex;
+    align-items: baseline;
+    margin-right: 50px;
 }
 
 .card-title {
     font-weight: bold;
     font-size: 22px;
     color: black;
-    white-space: nowrap;
-    flex-grow:1;
-}
+    flex-grow:0;
+    flex-basis: 50%;
 
-.card-title-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
 }
-
 
 .card-header {
     padding: 20px 27px 20px 35px;
@@ -37,6 +38,8 @@
     font-size: 20px;
     color: #767672;
     flex-grow:1;
+    white-space: nowrap;
+    padding: 0 10px 0 10px;
 }
 
 .card-amount {
@@ -44,6 +47,7 @@
     font-size: 22px;
     color: black;
     flex-grow:0;
+    white-space: nowrap;
 }
 
 .card-number {
@@ -58,8 +62,9 @@
     display: block;
     width: 16px;
     height: 18px;
-    margin-left: 25px;
-    align-self: center;
+    left: calc(100% - 15px);
+    top: 23px;
+    position: relative;
 }
 
 .card-up-arrow {
@@ -68,9 +73,21 @@
     display: block;
     width: 16px;
     height: 18px;
-    margin-left: 25px;
-    align-self: center;
+    left: calc(100% - 15px);
+    top: 23px;
+    position: relative;
 }
+
+@media (max-width: 600px) {
+    .card-title-container {
+        display:block;
+    }
+
+    .card-dueDate {
+        padding: 9px 0;
+    }
+}
+
 
 @keyframes card-description_appear-animation {
     0% { max-height: 0; }

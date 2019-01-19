@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./SortButton.css"
 
 class SortButton extends Component {
 
