@@ -1,9 +1,11 @@
 
 export default function loadDataToState(setState) {
-    fetch("data.php")
+    //const url = 'data.json' ;
+    //const url = 'data.php' ;
+    const url = 'public/data' ;
+    fetch(url)
         .then(response => response.json())
         .then(data => {
-            //console.log(data) ;
             setState({cards: data.cards});
         })
         .catch(function(err) {

@@ -32,7 +32,7 @@ $array = array();
 
 for ($index = 0; $index <= 100; $index++) {
     $card = array("id" => (string)$index) ;
-    $card["cardNumber"] = (string)$faker->unique()->randomNumber(4) ;
+    $card["cardNumber"] = (string)$faker->unique()->randomNumber(4, true) ;
     $card["currency"] = $faker->randomElement($currencyArr) ;
     $card["title"] = getTitle($faker) ;
     $card["amount"] = (string)$faker->numberBetween(1000,10000000) ;
@@ -44,4 +44,4 @@ for ($index = 0; $index <= 100; $index++) {
 
 $cards = array("cards"=>$array);
 
-echo json_encode($cards);
+echo json_encode($cards, JSON_UNESCAPED_UNICODE);
