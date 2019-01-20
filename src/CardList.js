@@ -5,14 +5,14 @@ class CardList extends Component {
 
     render() {
 
-        const cards = this.props.cards.map((item, index) =>
+        const cards = this.props.cards.map((item) =>
             ( <Card title={item.title}
                     description={item.description}
                     currency={item.currency}
                     dueDate={item.dueDate}
                     amount={item.amount}
                     cardNumber={item.cardNumber}
-                    key={index}
+                    key={item.cardNumber}
             />));
 
         return <div>{cards}</div> ;
