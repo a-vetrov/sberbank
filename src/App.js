@@ -62,7 +62,7 @@ class App extends Component {
         return 0 ;
 
         function getDate(date) {
-            return new Date(date.split(".").reverse().join("/")) ;
+            return new Date(date.split("-").reverse().join("/")) ;
         }
     } ;
 }

@@ -24,7 +24,7 @@ class Card extends Component {
                     <div className={isOpen ? "card-up-arrow" : "card-down-arrow"}/>
                     <div className="card-title-container">
                         <div className="card-title">{title + ", " + currencySign}</div>
-                        <div className="card-dueDate">{"до " + dueDate}</div>
+                        <div className="card-dueDate">{"до " + this.getFormattedDate(dueDate)}</div>
                         <div className="card-amount">{this.addThousandsSeparator(amount) + " " + currencySign}</div>
 
                     </div>
@@ -54,6 +54,8 @@ class Card extends Component {
     addThousandsSeparator = (amount) => {
         return amount.replace(/\B(?=(\d{3})+(?!\d))/g, " ");
     } ;
+
+    getFormattedDate = (dueDate) => dueDate.split("-").join(".") ;
 }
 
 export default Card;

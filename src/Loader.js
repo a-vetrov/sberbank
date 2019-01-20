@@ -1,6 +1,6 @@
 
 export default function loadDataToState(setState) {
-    fetch("data.json")
+    fetch("data.php")
         .then(response => response.json())
         .then(data => {
             //console.log(data) ;
